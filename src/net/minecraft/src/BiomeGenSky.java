@@ -1,0 +1,17 @@
+package net.minecraft.src;
+
+
+public class BiomeGenSky
+extends BiomeGenBase {
+    public BiomeGenSky() {
+        this.spawnableMonsterList.clear();
+        this.spawnableCreatureList.clear();
+        this.spawnableWaterCreatureList.clear();
+        this.spawnableCreatureList.add(new BiomeGenBase.SpawnListEntry(EntityChicken.class, 10));
+    }
+
+    public int getSkyColorByTemp(float temperature) {
+        return 0xC0C0FF;
+    }
+}
+
